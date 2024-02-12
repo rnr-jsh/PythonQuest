@@ -4,6 +4,14 @@
 # Write the code ↓ to read user's input.
 
 
+name = input("Indicate your name: ")
+clubDept = input("Enter your AWS Cloud Club department: ")
+galaxy = input("Specify the galaxy to which you belong: ")
+
+print("\n\nYour Deparment's DP Blast Caption: \n")
+print("🚀Deploying...I'm " + name + " , representing the " + clubDept + ". I'm thrilled to commence our expedition into the vast and uncharted realm of the " + galaxy + ". Together, we'll navigate this exciting frontier of technology! 🌌🌟💻")
+
+
 
 
 
