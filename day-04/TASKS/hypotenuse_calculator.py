@@ -4,8 +4,13 @@ import math
 # Be cautious when reading input of various data types.
 
 print("HYPOTENUSE CALCULATOR FOR ALF\n")
-num1 = float(input("Please, enter the length of side A: "))
-num2 = float(input("Please, enter the length of side B: "))
+while (True):
+    try:
+        num1 = float(input("Please, enter the length of side A: "))
+        num2 = float(input("Please, enter the length of side B: "))
+        break
+    except Exception:
+        print("Invalid input. Enter a valid floating number.\n")
 
 
 # Write the code ↓ to calculate the hypotenuse using the Pythagorean theorem.
@@ -19,8 +24,6 @@ hypotenuse = math.sqrt(hypotenuse)
 print("The hypotenuse of the right-angled triangle is: %.2f" % hypotenuse)
 
 # Select and employ a string concatenation method based on your personal preference and comfort level.
-
-
 
 
 
