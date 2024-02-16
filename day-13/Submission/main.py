@@ -9,7 +9,7 @@ def read_csv(filename):
     content = {}
     i = 0
     with open(filename, 'r') as file:
-        reader = csv.reader(file)
+        reader = csv.DictReader(file)
         for line in reader:
             content[i] = line
             i += 1
