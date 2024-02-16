@@ -8,7 +8,7 @@ csv_file = 'programming_languages.csv'
 def read_csv(filename):
     content = {}
     i = 0
-    with open('programming_languages.csv', 'r') as file:
+    with open(filename, 'r') as file:
         reader = csv.reader(file)
         for line in reader:
             content[i] = line
@@ -17,8 +17,8 @@ def read_csv(filename):
 
 @app.route('/', methods=['GET'])
 def get_langs():
-    csv_file = read_csv('programming_languages.csv')
-    return jsonify(csv_file)
+    csv_data = read_csv(csv_file)
+    return jsonify(csv_data)
 
 if __name__ == '__main__':
     app.run(debug=True)
