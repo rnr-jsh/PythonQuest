@@ -9,9 +9,10 @@ my_info = {
     "aws_service": "Give one AWS service you know"
 }
 
+
 @app.route('/', methods=['GET'])
 def get_info():
-    pass
+    return jsonify(my_info)
 
 if __name__ == '__main__':
     app.run(debug=True)
